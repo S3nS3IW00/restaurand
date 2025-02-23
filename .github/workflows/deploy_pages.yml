@@ -21,6 +21,14 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - name: Replace Placeholders
+        uses: LSVH/gha-replace-placeholders@v1
+        with:
+          include: |
+            web/index.html
+            lib/api/google_rest_controller.dart
+          placeholders: |
+            <MAPS_API_KEY>=AIzaSyDpCrR0S-SOFskxDrZnbJLUPvatSZqcm-g
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
