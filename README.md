@@ -1,16 +1,11 @@
-# restaurand
+# Restaurand
+A restaurant randomizer that uses the Google Maps API and Geolocation service. It queries places with the “restaurant” type in the selected area (`v1/places:searchNearby`) and randomly selects one, displaying a nice radar effect. Users can navigate to a specific location either by using the Geolocation service to get their current position or by searching for a location in the search bar (`v1/places:search`).
 
-Restaurant randomizer
+> [!WARNING]
+> The APIs used by this app are not free and require a billing account in Google Cloud.
 
-## Getting Started
+## Build
+Running the app requires a Google Maps API key, which can be obtained from the Google Cloud Console. Replace all instances of `<MAPS_API_KEY>` in the code with your API key.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Preview
+A working preview is available on [Github Pages](https://s3ns3iw00.github.io/restaurand)
