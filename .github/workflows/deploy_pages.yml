@@ -28,7 +28,7 @@ jobs:
             web/index.html
             lib/api/google_rest_controller.dart
           placeholders: |
-            <MAPS_API_KEY>=AIzaSyDpCrR0S-SOFskxDrZnbJLUPvatSZqcm-g
+            <MAPS_API_KEY>=${{ secrets.MAPS_API_KEY }}
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
